@@ -11,46 +11,132 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style>
+        
+         @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); 
+        /* Google 思源宋體 */
+        /* font-family: 'cwTeXFangSong', serif;*/
+            
+        .thumbnail{
+            background-color: rgb(252, 180, 180);
+            font-family: 'cwTeXFangSong', serif;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        .thumbnail .caption h2{
+            color:rgb(0, 0, 0);
+            font-weight: 900;
+            font-size: 30px;
+        }
+        .thumbnail .caption p{
+            color:#000;
+            font-size: 20px;
+        }
+        .carousel{
+            margin-bottom: 50px;
+        }
+        .carousel .carousel-caption h1{
+            font-style: italic;
+            font-weight: 900;
+            color: rgb(251, 255, 0);
+        }
+        .carousel .carousel-caption p{
+            font-weight: 500;
+            color: rgb(251, 255, 0);
+        }
+
+        </style>
     </head>
     <body>
+        
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">選單切換</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OA精選</a>
+                </div>
+                
+                <!-- 手機隱藏選單區 -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <!-- 左選單 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">關於OA精選</a></li>
+                        <li><a href="#">OA產品</a></li>
+                        <li><a href="#">OA門市</a></li>
+                        <li><a href="#">Q & A</a></li>
+                    </ul>
+                
+                    <!-- 搜尋表單 -->
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜尋</button>
+                    </form>
+                
+                    <!-- 右選單 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">會員您好</a></li>
+                        <li><a href="#">登出</a></li>
+                        <li><a href="#">個人設定</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">繁體中文(你好) <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">繁體中文(你好)</a></li>
+                                <li><a href="#">English(Hello)</a></li>
+                                <li><a href="#">日本語(こんにちは)</a></li>
+                                <li><a href="#">韓文(안녕하세요)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 手機隱藏選單區結束 -->
+            </div>
+        </nav>
         
         
         <div id="carousel-id" class="carousel slide" data-ride="carousel">
             <!-- 幻燈片小圓點區 -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="1" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="2" class=""></li>
             </ol>
             <!-- 幻燈片主圖區 -->
             <div class="carousel-inner">
                 <div class="item">
-                    <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+                    <img src="https://picsum.photos/2800/700/?random=1">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>CSS可樂好喝超爽快</h1>
-                            <p>你喝過了嗎？</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>CSS可樂的外掛真方便</h1>
-                            <p>你安裝了嗎？</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
+                            <h1>限時免運~快來下單喔</h1>
+                            <p>滿$1299即可享免運喔</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">去買單</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="item active">
-                    <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+                    <img src="https://picsum.photos/2800/700/?random=2">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>我是標題喔～自己改文案吧</h1>
-                            <p>我是內文喔，你可以把字打在這裡呦</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
+                            <h1>商品下殺$299UP</h1>
+                            <p>活動期限~01/19</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">去買單</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/2800/700/?random=3">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>會員才有的好康!千萬別錯過~</h1>
+                            <p>快去加入會員吧!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">加入會員</a></p>
                         </div>
                     </div>
                 </div>
@@ -68,11 +154,11 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=1">
                         <div class="caption">
-                            <h2>國二3 24 陳安榆</h2>
-                            <p>內文</p>
+                            <h2>國二3 24</h2>
+                            <p>陳安榆</p>
                             <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
+                                <a href="#" class="btn btn-info"><span class="fa fa-shopping-cart fa-lg"></span>立即購買</a>
+                                <a href="#" class="btn btn-default"><span class="fa fa-heart-o fa-lg"></span>讚</a>
                             </p>
                         </div>
                     </div>
@@ -83,11 +169,11 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=2">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>大學T</h2>
+                            <p>售價$399</p>
                             <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
+                                <a href="#" class="btn btn-info"><span class="fa fa-shopping-cart fa-lg"></span>立即購買</a>
+                                <a href="#" class="btn btn-default"><span class="fa fa-heart-o fa-lg"></span>讚</a>
                             </p>
                         </div>
                     </div>
@@ -98,11 +184,11 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=3">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>襯衫</h2>
+                            <p>售價$899</p>
                             <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
+                                <a href="#" class="btn btn-info"><span class="fa fa-shopping-cart fa-lg"></span>立即購買</a>
+                                <a href="#" class="btn btn-default"><span class="fa fa-heart-o fa-lg"></span>讚</a>
                             </p>
                         </div>
                     </div>
@@ -113,11 +199,23 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=4">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>洋裝</h2>
+                            <p>售價$1099</p>
                             <p>
-                                <a href="#" class="btn btn-info">加入購物車</a>
-                                <a href="#" class="btn btn-default">下次再買</a>
+                                <a href="#" class="btn btn-info"><span class="fa fa-shopping-cart fa-lg"></span>立即購買</a>
+                                <a href="#" class="btn btn-default"><span class="fa fa-heart-o fa-lg"></span>讚</a>
+                            <p>
+                                <!-- https://fontawesome.com/v4.7.0/icons -->
+                                <!-- https://www.wfublog.com/2016/01/font-awesome-advanced-skill-social-button.html -->
+                                <!--
+                                Font Awesome Class 
+                                    放大 fa-lg、fa-2x ~ fa-5x 固定寬度 fa-fw              框線 fa-border
+                                    向左浮動 fa-pll-left      向右浮動 fa-pll-right
+                                    旋轉動畫 fa-spin          分解動畫 fa-pulse
+                                    旋轉角度 fa-rotate-90     水平鏡射 fa-flip-horizontal  垂直鏡射 fa-flip-vertical
+                                -->
+                                
+                                
                             </p>
                         </div>
                     </div>
